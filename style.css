@@ -1,0 +1,139 @@
+/* variables*/
+
+:root {
+  
+    --Orange: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+
+    
+  }
+  
+  /* reset */
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  body {
+    background-color: var(--VeryDarkBlue);
+    font-size: 15px;
+    font-family: "Overpass";
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+.rating{
+    width: 30%;
+    background-color: var(--DarkBlue);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+h1{
+    color: var(--White);
+}
+p{
+    color: var(--LightGrey);
+}
+h1{
+    padding-top: 2rem;
+}
+.vote{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;    
+}
+.vote-component{
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 6rem;
+    color: var(--LightGrey);
+    background-color: var(--MediumGrey);
+}
+button{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    width: calc(100%);
+    background-color: var(--Orange);
+    color: var(--White);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: 0;
+}
+button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+.vote-component:hover{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+
+.selected{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.thank-you{
+    width: 30%;
+    background-color: var(--DarkBlue);
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.thank-you p,.thank-you h1{
+    text-align: center;
+}
+.output{
+    margin-top: 2rem;
+    background-color:rgb(60, 64, 83);
+    color: var(--Orange);
+    border-radius: 2rem;
+    padding:0.3rem  1.5rem;
+    font-weight: 700;
+}
+.hidden{
+    display: none;
+}
+@media(max-width:375px){
+    .thank-you{
+        width: 96%;
+    }
+    .rating{
+        width: 96%;
+    }
+}
